@@ -1,0 +1,3 @@
+"""
+CineScope test suite package.
+"""

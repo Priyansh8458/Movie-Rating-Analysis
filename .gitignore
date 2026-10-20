@@ -1,0 +1,36 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.venv/
+venv/
+ENV/
+env/
+
+# Apache Spark & Derby DB
+metastore_db/
+derby.log
+spark-warehouse/
+*.spark-warehouse
+
+# Streamlit
+.streamlit/secrets.toml
+
+# IDE & OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Pytest & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Large Datasets (>100MB blocked by GitHub)
+data/ratings.csv
+data/credits.csv
+
