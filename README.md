@@ -1,19 +1,19 @@
-# CineScope — Movie Performance Analytics
+# CinePulse — Movie Intelligence Platform
 ### Apache Spark & Streamlit Distributed Big Data Analytics Platform
 
 [![Apache Spark](https://img.shields.io/badge/Apache%20Spark-3.5%20%2F%20PySpark-E25A1C?logo=apachespark&logoColor=white)](https://spark.apache.org/)
 [![Python](https://img.shields.io/badge/Python-3.10%20--%203.14-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![Streamlit](https://img.shields.io/badge/Frontend-Streamlit-FF4B4B?logo=streamlit&logoColor=white)](https://streamlit.io/)
 [![Plotly](https://img.shields.io/badge/Visuals-Plotly-3F4F75?logo=plotly&logoColor=white)](https://plotly.com/)
-[![License](https://img.shields.io/badge/License-MIT-8B5CF6)](#)
+[![License](https://img.shields.io/badge/License-MIT-F59E0B)](#)
 
 ---
 
 ## 1. Project Overview
 
-**CineScope** is a high-performance big data analytics platform engineered with **Apache Spark (PySpark)** and **Streamlit**. The platform analyzes **45,466 feature films** from the Kaggle Movies Dataset, combining distributed data transformations, **Spark SQL** for analytical queries, and a modern cinematic dark-themed dashboard with interactive **Plotly** visualizations.
+**CinePulse** is a high-performance big data analytics platform engineered with **Apache Spark (PySpark)** and **Streamlit**. The platform analyzes **45,466 feature films** from the Kaggle Movies Dataset, combining distributed data transformations, **Spark SQL** for analytical queries, and a modern cinematic dark-themed dashboard with interactive **Plotly** visualizations.
 
-Unlike static dashboards or simple prototypes, CineScope executes actual PySpark DataFrame transformations and Spark SQL queries over real-world data, demonstrating industrial big data engineering practices.
+Unlike static dashboards or simple prototypes, CinePulse executes actual PySpark DataFrame transformations and Spark SQL queries over real-world data, demonstrating industrial big data engineering practices.
 
 ---
 

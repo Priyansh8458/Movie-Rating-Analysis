@@ -2,6 +2,7 @@
 UI helper functions for Streamlit application styling, persistent sidebar,
 and cached data pipeline access.
 """
+# pyrefly: ignore[missing-import]
 import streamlit as st
 from typing import Tuple, Dict, Any
 
@@ -48,7 +49,7 @@ def inject_custom_css():
 
     h1 {{
         font-size: 2.2rem;
-        background: linear-gradient(120deg, #FFFFFF 0%, #A5B4FC 100%);
+        background: linear-gradient(120deg, #FFFFFF 0%, #FDE68A 60%, #F59E0B 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         margin-bottom: 0.3rem;
@@ -109,7 +110,7 @@ def inject_custom_css():
 
     /* Card Containers */
     .cinescope-card {{
-        background: linear-gradient(145deg, {THEME['bg_card']} 0%, #111728 100%);
+        background: linear-gradient(145deg, {THEME['bg_card']} 0%, #0E1420 100%);
         border: 1px solid rgba(255, 255, 255, 0.08);
         border-radius: 14px;
         padding: 1.35rem;
@@ -120,8 +121,8 @@ def inject_custom_css():
 
     .cinescope-card:hover {{
         transform: translateY(-2px);
-        border-color: rgba(139, 92, 246, 0.45);
-        box-shadow: 0 10px 28px rgba(0, 0, 0, 0.45);
+        border-color: rgba(245, 158, 11, 0.45);
+        box-shadow: 0 10px 28px rgba(245, 158, 11, 0.18);
     }}
 
     /* Dataframe Container */
@@ -148,20 +149,21 @@ def inject_custom_css():
 
     /* Streamlit Buttons */
     .stButton > button {{
-        background: linear-gradient(135deg, {THEME['accent_primary']} 0%, #6366F1 100%);
-        color: white;
+        background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
+        color: #0A0D14;
         border: none;
         border-radius: 8px;
-        font-weight: 600;
+        font-weight: 700;
         padding: 0.5rem 1.2rem;
         transition: all 0.2s ease;
-        box-shadow: 0 4px 12px rgba(139, 92, 246, 0.3);
+        box-shadow: 0 4px 14px rgba(245, 158, 11, 0.35);
     }}
 
     .stButton > button:hover {{
-        background: linear-gradient(135deg, {THEME['accent_hover']} 0%, #4F46E5 100%);
-        box-shadow: 0 6px 18px rgba(139, 92, 246, 0.5);
+        background: linear-gradient(135deg, #FBBF24 0%, #B45309 100%);
+        box-shadow: 0 6px 18px rgba(245, 158, 11, 0.5);
         transform: translateY(-1px);
+        color: #000000;
     }}
 
     /* Tabs Styling */
@@ -211,15 +213,15 @@ def render_sidebar_status(data_report: Dict[str, Any]):
         # Brand Title Header — Shifted to the VERY TOP of the sidebar
         st.markdown(f"""
         <div id="cinescope-sidebar-brand" style="text-align: center; padding-bottom: 14px; margin-bottom: 12px; border-bottom: 1px solid {THEME['border']};">
-            <div style="font-size: 34px; margin-bottom: 4px; filter: drop-shadow(0 4px 12px rgba(139, 92, 246, 0.45));">🎬</div>
-            <div style="font-size: 24px; font-weight: 800; font-family: 'Outfit', sans-serif; letter-spacing: -0.02em; background: linear-gradient(135deg, #FFFFFF 0%, #A5B4FC 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; line-height: 1.2;">
-                CineScope
+            <div style="font-size: 34px; margin-bottom: 4px; filter: drop-shadow(0 4px 12px rgba(245, 158, 11, 0.45));">⚡🎬</div>
+            <div style="font-size: 24px; font-weight: 800; font-family: 'Outfit', sans-serif; letter-spacing: -0.02em; background: linear-gradient(135deg, #FFFFFF 0%, #FDE68A 50%, #F59E0B 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; line-height: 1.2;">
+                CinePulse
             </div>
-            <div style="font-size: 11px; font-weight: 700; color: {THEME['accent_secondary']}; text-transform: uppercase; letter-spacing: 0.14em; margin-top: 3px;">
-                Movie Performance Analytics
+            <div style="font-size: 11px; font-weight: 700; color: {THEME['accent_primary']}; text-transform: uppercase; letter-spacing: 0.14em; margin-top: 3px;">
+                Movie Intelligence Platform
             </div>
             <div style="font-size: 10px; color: {THEME['text_muted']}; margin-top: 4px; font-weight: 500; letter-spacing: 0.04em;">
-                Enterprise Big Data Intelligence
+                Distributed Big Data Analytics
             </div>
         </div>
 
@@ -295,7 +297,7 @@ def render_sidebar_status(data_report: Dict[str, Any]):
 
         st.markdown(f"""
         <div style="margin-top: 20px; padding-top: 10px; border-top: 1px solid {THEME['border']}; font-size: 11px; color: {THEME['text_muted']}; text-align: center;">
-            CineScope v1.2.0 • Apache Spark & Streamlit
+            CinePulse v2.0 • Apache Spark & Streamlit
         </div>
         """, unsafe_allow_html=True)
 

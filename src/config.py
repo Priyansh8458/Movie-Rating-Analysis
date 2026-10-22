@@ -1,5 +1,5 @@
 """
-Configuration settings and constants for CineScope.
+Configuration settings and constants for CinePulse.
 """
 from pathlib import Path
 
@@ -13,7 +13,7 @@ CREDITS_PATH = DATA_DIR / "credits.csv"
 KEYWORDS_PATH = DATA_DIR / "keywords.csv"
 
 # Spark Application Details
-SPARK_APP_NAME = "CineScope - Movie Performance Analytics"
+SPARK_APP_NAME = "CinePulse - Movie Performance Analytics"
 SPARK_MASTER = "local[*]"
 
 # Image & Poster CDN
@@ -21,22 +21,22 @@ TMDB_POSTER_BASE_URL = "https://image.tmdb.org/t/p/w500"
 
 # Styling / Theme Tokens
 THEME = {
-    "bg_main": "#0B1020",
-    "bg_card": "#151C2F",
-    "bg_card_secondary": "#1E293B",
-    "border": "#2E3A52",
-    "accent_primary": "#8B5CF6",     # Electric Violet
-    "accent_secondary": "#06B6D4",   # Cyan
-    "accent_hover": "#7C3AED",
+    "bg_main": "#0A0D14",
+    "bg_card": "#131926",
+    "bg_card_secondary": "#1E2638",
+    "border": "#273248",
+    "accent_primary": "#F59E0B",     # Cinema Amber Gold
+    "accent_secondary": "#06B6D4",   # Cyber Cyan
+    "accent_hover": "#D97706",       # Deep Amber
     "text_primary": "#F8FAFC",
     "text_secondary": "#94A3B8",
     "text_muted": "#64748B",
     "success": "#10B981",            # Emerald
     "warning": "#F59E0B",            # Amber
-    "danger": "#F43F5E",             # Rose
+    "danger": "#F43F5E",             # Rose Red
     "chart_palette": [
-        "#8B5CF6", "#06B6D4", "#3B82F6", "#10B981",
-        "#F59E0B", "#EC4899", "#6366F1", "#14B8A6",
+        "#F59E0B", "#06B6D4", "#3B82F6", "#10B981",
+        "#EC4899", "#8B5CF6", "#F97316", "#14B8A6",
         "#F43F5E", "#84CC16", "#A855F7", "#0EA5E9"
     ]
 }

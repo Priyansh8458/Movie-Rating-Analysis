@@ -5,9 +5,10 @@ import sys, importlib
 if "src.ui_helpers" in sys.modules:
     importlib.reload(sys.modules["src.ui_helpers"])
 
+# pyrefly: ignore[missing-import]
 import streamlit as st
 
-st.set_page_config(page_title="About Project — CineScope", page_icon="ℹ️", layout="wide")
+st.set_page_config(page_title="About Project — CinePulse", page_icon="ℹ️", layout="wide")
 
 from src.config import THEME, MOVIES_METADATA_PATH
 from src.ui_helpers import inject_custom_css, render_sidebar_status, get_pipeline_resources
@@ -24,7 +25,7 @@ except Exception as e:
 
 st.markdown("""
 <div style="margin-bottom: 20px;">
-    <h1 style="margin: 0; font-size: 30px;">About CineScope Analytics</h1>
+    <h1 style="margin: 0; font-size: 30px;">About CinePulse Analytics</h1>
     <p style="margin: 4px 0 0 0; color: #94A3B8; font-size: 14px;">
         Enterprise Big Data Architecture — Comprehensive System Documentation & Distributed Engineering Specifications.
     </p>
@@ -37,7 +38,7 @@ st.markdown(f"""
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; font-size: 13px;">
         <div>
             <div style="color: {THEME['text_muted']}; text-transform: uppercase; font-size: 11px; font-weight: 600;">Platform Title</div>
-            <div style="color: {THEME['text_primary']}; font-weight: 700; font-size: 15px; margin-top: 2px;">CineScope — Movie Performance Analytics</div>
+            <div style="color: {THEME['text_primary']}; font-weight: 700; font-size: 15px; margin-top: 2px;">CinePulse — Movie Intelligence Platform</div>
         </div>
         <div>
             <div style="color: {THEME['text_muted']}; text-transform: uppercase; font-size: 11px; font-weight: 600;">Architecture Pattern</div>

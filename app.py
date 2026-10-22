@@ -6,11 +6,12 @@ import sys, importlib
 if "src.ui_helpers" in sys.modules:
     importlib.reload(sys.modules["src.ui_helpers"])
 
+# pyrefly: ignore[missing-import]
 import streamlit as st
 
 # Configure page layout and metadata
 st.set_page_config(
-    page_title="CineScope — Movie Performance Analytics",
+    page_title="CinePulse — Movie Intelligence & Analytics",
     page_icon="🎬",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -43,8 +44,9 @@ except Exception as e:
 # Main Hero Header
 st.markdown(f"""
 <div style="
-    background: linear-gradient(135deg, rgba(21, 28, 47, 0.95) 0%, rgba(11, 16, 32, 0.95) 100%);
+    background: linear-gradient(135deg, rgba(19, 25, 38, 0.95) 0%, rgba(10, 13, 20, 0.95) 100%);
     border: 1px solid {THEME['border']};
+    border-top: 3px solid {THEME['accent_primary']};
     border-radius: 16px;
     padding: 30px;
     margin-bottom: 25px;
@@ -57,17 +59,17 @@ st.markdown(f"""
     </div>
     <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px; flex-wrap: wrap;">
         <span style="
-            background: linear-gradient(135deg, {THEME['accent_primary']} 0%, #6366F1 100%);
-            color: white;
+            background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
+            color: #0A0D14;
             font-size: 11px;
-            font-weight: 700;
+            font-weight: 800;
             padding: 4px 12px;
             border-radius: 20px;
             letter-spacing: 0.06em;
             text-transform: uppercase;
-            box-shadow: 0 2px 8px rgba(139, 92, 246, 0.4);
+            box-shadow: 0 2px 8px rgba(245, 158, 11, 0.4);
         ">
-            Enterprise Analytics Platform
+            Enterprise Intelligence Platform
         </span>
         <span style="
             background: rgba(6, 182, 212, 0.12);
@@ -93,7 +95,7 @@ st.markdown(f"""
         </span>
     </div>
     <h1 style="margin: 0 0 10px 0; font-size: 38px; font-weight: 800; letter-spacing: -0.02em;">
-        CineScope — Movie Performance Analytics
+        CinePulse — Movie Intelligence Platform
     </h1>
     <p style="margin: 0; color: {THEME['text_secondary']}; font-size: 15px; max-width: 880px; line-height: 1.6;">
         A high-performance cinematic intelligence platform analyzing <strong>{data_report['total_clean_records']:,} feature films</strong> across decades. 
